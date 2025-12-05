@@ -18,16 +18,20 @@ class FibonacciTracker:
     def _load_state(self):
         """Load the current state from the log file."""
         if self.log_file.exists():
-            with open(self.log_file, 'r') as f:
-                return json.load(f)
-        else:
-            # Initialize with f(0)=0 and f(1)=1, starting from f(2)
-            return {
-                "sequence": [0, 1],
-                "penalty": 0,
-                "last_two": [0, 1],  # Track last two numbers for calculation
-                "index": 2  # Next index to generate
-            }
+            try:
+                with open(self.log_file, 'r') as f:
+                    return json.load(f)
+            except (json.JSONDecodeError, IOError) as e:
+                print(f"Warning: Could not load state from {self.log_file}: {e}")
+                print("Initializing with default state.")
+        
+        # Initialize with f(0)=0 and f(1)=1, starting from f(2)
+        return {
+            "sequence": [0, 1],
+            "penalty": 0,
+            "last_two": [0, 1],  # Track last two numbers for calculation
+            "index": 2  # Next index to generate
+        }
     
     def _save_state(self):
         """Save the current state to the log file."""
@@ -68,11 +72,15 @@ class FibonacciTracker:
     
     def get_status(self):
         """Get current status of the tracker."""
+        last_num = None
+        if self.state["sequence"]:
+            last_num = self.state["sequence"][-1]
+        
         return {
             "sequence": self.state["sequence"],
             "penalty": self.state["penalty"],
             "next_index": self.state["index"],
-            "last_number": self.state["sequence"][-1] if self.state["sequence"] else None
+            "last_number": last_num
         }
 
 
