@@ -9,14 +9,15 @@
     8,
     13,
     21,
-    34
+    34,
+    55
   ],
   "penalty": -55,
   "last_two": [
-    21,
-    34
+    34,
+    55
   ],
-  "index": 10,
-  "count_total": 9,
+  "index": 11,
+  "count_total": 10,
   "count_failed": 1
 }
