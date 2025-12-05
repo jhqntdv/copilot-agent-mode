@@ -19,14 +19,15 @@
     987,
     1597,
     2584,
-    4181
+    4181,
+    6765
   ],
   "penalty": -144,
   "last_two": [
-    2584,
-    4181
+    4181,
+    6765
   ],
-  "index": 20,
-  "count_total": 20,
+  "index": 21,
+  "count_total": 21,
   "count_failed": 2
 }
