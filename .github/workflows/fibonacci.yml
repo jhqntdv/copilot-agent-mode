@@ -1,6 +1,9 @@
 name: Fibonacci Sequence Generator
 
 on:
+  push:
+    branches:
+      - main
   schedule:
     # Every hour from 9 AM to 9 PM UTC, Monday to Friday
     - cron: '0 9-21 * * 1-5'
