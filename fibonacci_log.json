@@ -17,14 +17,15 @@
     377,
     610,
     987,
-    1597
+    1597,
+    2584
   ],
   "penalty": -144,
   "last_two": [
-    987,
-    1597
+    1597,
+    2584
   ],
-  "index": 18,
-  "count_total": 18,
+  "index": 19,
+  "count_total": 19,
   "count_failed": 2
 }
