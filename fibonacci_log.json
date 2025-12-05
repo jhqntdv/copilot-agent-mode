@@ -12,12 +12,12 @@
     34,
     55
   ],
-  "penalty": -55,
+  "penalty": -144,
   "last_two": [
     34,
     55
   ],
   "index": 11,
-  "count_total": 10,
-  "count_failed": 1
+  "count_total": 11,
+  "count_failed": 2
 }
