@@ -4,12 +4,16 @@
     1,
     1,
     2,
-    3
+    3,
+    5,
+    8
   ],
   "penalty": 0,
   "last_two": [
-    2,
-    3
+    5,
+    8
   ],
-  "index": 5
+  "index": 7,
+  "count_total": 5,
+  "count_failed": 0
 }

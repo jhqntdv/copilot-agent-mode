@@ -8,6 +8,7 @@ This project implements an automated Fibonacci sequence generator that runs via 
 2. **Incremental Generation**: Each run generates the next number in the Fibonacci sequence.
 3. **State Persistence**: The sequence and penalty state are stored in `fibonacci_log.json`.
 4. **Penalty Tracking**: If a run fails, the penalty variable accumulates the negative value of what would have been the next number.
+5. **Default mechanism simulator**: A 20% chance of workflow fail to process is set by default as a simulator. Use UPDATE_RATE to change the default rate.
 
 ## Sequence Details
 
@@ -49,5 +50,5 @@ You can manually trigger the workflow from the Actions tab:
 
 ## Command Prompt to run N times
 ```
-for /l %i in (1,1,3) do python fibonacci_tracker.py
+for /l %i in (1,1,5) do python fibonacci_tracker.py
 ```
