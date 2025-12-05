@@ -46,3 +46,8 @@ You can manually trigger the workflow from the Actions tab:
 - `fibonacci_tracker.py`: Python script that generates the sequence
 - `.github/workflows/fibonacci.yml`: GitHub Actions workflow configuration
 - `fibonacci_log.json`: State file (created on first run)
+
+## Command Prompt to run N times
+```
+for /l %i in (1,1,3) do python fibonacci_tracker.py
+```

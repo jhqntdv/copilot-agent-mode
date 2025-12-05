@@ -2,12 +2,10 @@ name: Fibonacci Sequence Generator
 
 on:
   schedule:
-    # Run Monday to Friday at 9 AM UTC (0 9 * * 1-5)
-    - cron: '0 9 * * 1-5'
-    # Run Monday to Friday at 12 PM UTC (0 12 * * 1-5)
-    - cron: '0 12 * * 1-5'
-    # Run Monday to Friday at 4 PM UTC (0 16 * * 1-5)
-    - cron: '0 16 * * 1-5'
+    # Every hour from 9 AM to 9 PM UTC, Monday to Friday
+    - cron: '0 9-21 * * 1-5'
+    # At 12:00 AM UTC, Monday to Friday
+    - cron: '0 0 * * 1-5'
   
   # Allow manual triggering
   workflow_dispatch:
