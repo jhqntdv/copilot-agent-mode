@@ -14,14 +14,15 @@
     89,
     144,
     233,
-    377
+    377,
+    610
   ],
   "penalty": -144,
   "last_two": [
-    233,
-    377
+    377,
+    610
   ],
-  "index": 15,
-  "count_total": 15,
+  "index": 16,
+  "count_total": 16,
   "count_failed": 2
 }
