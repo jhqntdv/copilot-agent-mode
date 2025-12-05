@@ -4,7 +4,7 @@ This project implements an automated Fibonacci sequence generator that runs via 
 
 ## How It Works
 
-1. **Scheduled Execution**: The workflow runs automatically Monday through Friday at 9 AM, 12 PM, and 4 PM UTC.
+1. **Scheduled Execution**: The workflow runs automatically Monday through Friday each hour at 9 AM to 9 PM, and 12AM.
 2. **Incremental Generation**: Each run generates the next number in the Fibonacci sequence.
 3. **State Persistence**: The sequence and penalty state are stored in `fibonacci_log.json`.
 4. **Penalty Tracking**: If a run fails, the penalty variable accumulates the negative value of what would have been the next number.
