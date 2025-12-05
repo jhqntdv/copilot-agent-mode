@@ -7,14 +7,15 @@
     3,
     5,
     8,
-    13
+    13,
+    21
   ],
   "penalty": 0,
   "last_two": [
-    8,
-    13
+    13,
+    21
   ],
-  "index": 8,
-  "count_total": 6,
+  "index": 9,
+  "count_total": 7,
   "count_failed": 0
 }
