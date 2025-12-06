@@ -6,9 +6,9 @@ on:
       - main
   schedule:
     # Every hour from 9 AM to 9 PM UTC, Monday to Friday
-    - cron: '0 9-21 * * 1-5'
-    # At 12:00 AM UTC, Monday to Friday
-    - cron: '0 0 * * 1-5'
+    # Runs during both EST and EDT periods (wider window)
+    - cron: '0 13-23 * * 1-5'  # 1 PM to 11 PM UTC
+    - cron: '0 0-2 * * 2-6'    # 12 AM to 2 AM UTC next day
   
   # Allow manual triggering
   workflow_dispatch:
