@@ -28,12 +28,12 @@
     75025,
     121393
   ],
-  "penalty": -75169,
+  "penalty": -271587,
   "last_two": [
     75025,
     121393
   ],
   "index": 27,
-  "count_total": 28,
-  "count_failed": 3
+  "count_total": 29,
+  "count_failed": 4
 }
